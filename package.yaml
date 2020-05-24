@@ -1,0 +1,76 @@
+name:       semantic-gen
+synopsis:   Code generator for the semantic languages.
+homepage:   https://github.com/mbj/semantic-gen#readme
+author:     Markus Schirp
+maintainer: mbj@schirp-dso.com
+github:     mbj/semantic-gen
+
+dependencies:
+- base
+- mprelude
+- pathtype
+- semantic-ruby
+- source-constraints
+- text
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wimplicit-prelude
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-local-signatures
+- -Wmissing-signatures
+- -Wmonomorphism-restriction
+- -Wredundant-constraints
+- -fhide-source-paths
+- -fplugin=SourceConstraints
+- -funbox-strict-fields
+- -optP-Wno-nonportable-include-path
+
+default-extensions:
+- AllowAmbiguousTypes
+- DeriveAnyClass
+- DeriveGeneric
+- DerivingStrategies
+- DerivingVia
+- DuplicateRecordFields
+- FlexibleContexts
+- FlexibleInstances
+- GeneralizedNewtypeDeriving
+- KindSignatures
+- LambdaCase
+- MultiParamTypeClasses
+- NoImplicitPrelude
+- NumericUnderscores
+- OverloadedLists
+- OverloadedStrings
+- RecordWildCards
+- ScopedTypeVariables
+- StrictData
+- TupleSections
+- TypeApplications
+
+library:
+  source-dirs: src
+
+executables:
+  semantic:
+    main: app/Semantic.hs
+    ghc-options: &ghc-options
+    - -rtsopts
+    - -threaded
+    - -with-rtsopts=-N
+    dependencies: semantic
+
+tests:
+  test:
+    main: Test.hs
+    source-dirs: test
+    ghc-options: *ghc-options
+    dependencies:
+    - devtools     ^>= 0.0.1
+    - semantic-gen
+    - tasty
+    - tasty-hunit

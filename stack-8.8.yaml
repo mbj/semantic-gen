@@ -1,0 +1,67 @@
+resolver: lts-15.13
+extra-deps:
+- algebraic-graphs-0.3@sha256:0cc77b36358ee813b7bee94ee64e1d064fcc0cba190ebc9ed899e79cc2e19345,9131
+- base-compat-0.10.5@sha256:d49e174ed0daecd059c52d13d4f4de87b5609c81212a22adbb92431f9cd58fff,6941
+- base-compat-batteries-0.10.5
+- devtools-0.0.1@sha256:6cc09d6568954a5c60dbd2428c2a62bfaa92e0ccdd05148c77234f21cf3971c5,4181
+- fastsum-0.1.1.1@sha256:984ce99c8c153f31bffe03af6cc0599818878d62e9dae6ecb26b6623c92d6cec,2325
+- fused-effects-exceptions-1.0.0.0@sha256:ee32e6e6a40ce2272603b93036e05945d79f68200b1f09624db39262724b0f98,1731
+- fused-effects-readline-0.0.0.0@sha256:8e9e5978d9b111a90e9ef400819916682f045befe8e2c21fba4d47c0ab512d95,1834
+- fused-effects-resumable-0.1.0.0@sha256:2914142d453d7c9c8cf9a349ab6abaf0297700827d71829ee69585b2ddedd170,1695
+- lingo-0.3.2.0@sha256:80b9ded65f2ddc0272a2872d9c3fc43c37934accae076d3e547dfc6c6b6e16d3,1899
+- mprelude-0.1.0@sha256:73336894a0addfeef076678bcc2e13dce800f66fcf1c67c72bf25184ecac3fab,2974
+- network-2.8.0.1@sha256:0f165dffa752d8cde30c2bde86f80609c4f1dc5eeb3182d593041f97839c5b3b,3011
+- pretty-show-1.9.5@sha256:92aa3f43d8459a9b543e102fbb0b7a6aae0074e18ca6a9970d9922a867114f53,1963
+- pretty-simple-3.1.1.0@sha256:47bee493fb3f36b7fbf339167a1f769198c330db5a03eaaf9a8ee030f3e823d4,4137
+- prettyprinter-1.5.1@sha256:fca87c3e2611d3499a0341a59857e9b424a23f31646e4737d535a18582284f96,5375
+- profunctors-5.3@sha256:7b929e71176e67756e58e2f7826b70d01332fc2ddbfc4b4da4da7a574a9ddafa,2112
+- proto-lens-jsonpb-0.2.0.0@sha256:98cbf67a7204299bb820fb0128026581cfde8850cb6d4868ab9d001b3beb66a0,1987
+- semilattices-0.0.0.4@sha256:333707e460923711d1edbdd02ebe1c3957d4e0808eab9886747b52ee3e443639,1909
+- source-constraints-0.0.1@sha256:abdda6ca3d942c81d61ed4374dbc0eee21e9c074da3f17b25d434c2d55df2acc,2979
+- tasty-1.3.1@sha256:01e35c97f7ee5ccbc28f21debea02a38cd010d53b4c3087f5677c5d06617a507,2520
+- tasty-mgolden-0.0.1@sha256:07fadb592cde353c386c5f38cff75539a5675e9350776ed6f4f0a70247427a78,4214
+- tree-sitter-0.9.0.1@sha256:9ea4fb1588e3ca5608f2e7214bdbd9fb927f61ef650e747138f00a149f549d3c,3355
+- tree-sitter-go-0.5.0.1@sha256:28c1c5ec951cd1157c1554bccfeb057eda853800b4e4936a1e1b31fa81df0b6a,1726
+- tree-sitter-java-0.7.0.1@sha256:e6ff823ac6e4601064fc798fcfed5082abc52508bac38de5f6cb6b0f00a3c3b6,1763
+- tree-sitter-json-0.7.0.1@sha256:938c5050381c2c3f7cf6483fb8ff48da88d3c1ebf97baff34e306e085f5362e9,1749
+- tree-sitter-php-0.4.0.0@sha256:ad6ad5bc866cc07eb019e0fea37cba7b35c9cca295e60468462254f3ba505c17,1771
+- tree-sitter-python-0.9.0.2@sha256:e06204b80edaa37dc4d887801c7cb3bf3859d1f0a6aba9341188e807289514cd,1873
+- tree-sitter-ql-0.1.0.3@sha256:907efdc529331e552222a906aa4e4270a9c976de0347853226cd4c939fd0d5c8,1777
+- tree-sitter-ruby-0.5.0.2@sha256:8232ef0a4a54bb610e20c1330769b2fe5dbc3bdbe207075368d2e00ff01290ea,1848
+- tree-sitter-rust-0.1.0.0@sha256:100b8590906cdb2bb7fadb50cf2c4f4d7d5d93cca5db9c20d2552076e824a586,1747
+- tree-sitter-tsx-0.5.0.1@sha256:3961001d5722e715192b98b5f7e5e53cce849f01a0a471c6b9b807f09bb49b2b,1975
+- tree-sitter-typescript-0.5.0.1@sha256:eb003fd473f605c4f65de1c50475c202bea6109d8c56a71877126de8b9ad945c,2039
+- git: https://github.com/antitypical/fused-syntax.git
+  commit: d11e14581217590a5c67f79cbaeee35ac8acee6a
+- git: https://github.com/github/semantic
+  commit: 85f3a937b79b3e95ada28941388139067dbde3a9
+  subdirs:
+  - .
+  - semantic-analysis
+  - semantic-ast
+  - semantic-codeql
+  - semantic-core
+  - semantic-go
+  - semantic-java
+  - semantic-json
+  - semantic-php
+  - semantic-python
+  - semantic-ruby
+  - semantic-scope-graph
+  - semantic-source
+  - semantic-tags
+  - semantic-tsx
+  - semantic-typescript
+ghc-options:
+  semantic-codeql:      -O0
+  semantic-go:          -O0
+  semantic-java:        -O0
+  semantic-json:        -O0
+  semantic-php:         -O0
+  semantic-python:      -O0
+  semantic-ruby:        -O0
+  semantic-scope-graph: -O0
+  semantic-source:      -O0
+  semantic-tags:        -O0
+  semantic-tsx:         -O0
+  semantic-typescript:  -O0
